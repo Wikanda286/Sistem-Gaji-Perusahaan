@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C479B556-F5B5-4EFE-8859-184C990B2584}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemBengkel</RootNamespace>
+    <AssemblyName>SistemBengkel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLapDetailTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLapDetailTrans.Designer.cs">
+      <DependentUpon>frmLapDetailTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLapTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLapTransaksi.Designer.cs">
+      <DependentUpon>frmLapTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPegawai.Designer.cs">
+      <DependentUpon>frmPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPelanggan.Designer.cs">
+      <DependentUpon>frmPelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduk.Designer.cs">
+      <DependentUpon>frmProduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransaksi.Designer.cs">
+      <DependentUpon>frmTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLapDetailTrans.resx">
+      <DependentUpon>frmLapDetailTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLapTransaksi.resx">
+      <DependentUpon>frmLapTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPegawai.resx">
+      <DependentUpon>frmPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPelanggan.resx">
+      <DependentUpon>frmPelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduk.resx">
+      <DependentUpon>frmProduk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransaksi.resx">
+      <DependentUpon>frmTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
